@@ -1,0 +1,61 @@
+.header{
+    margin-top: 30px;
+}
+
+.header ul li{
+    display: inline-flex;
+    margin: auto 15px;
+}
+
+button{
+    background-color: rgb(59, 107, 212);
+    border: 1px solid rgb(59, 107, 212);
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+}
+
+.hiring button{
+    background: linear-gradient(to right,rgb(226, 164, 48),rgb(216, 59, 85));
+    border: 1px solid rgb(240, 124, 143);
+    border-radius: 20px;
+    padding-inline: 10px;
+    padding-block: 7px;
+}
+
+@media screen and (max-width:500px) {
+    .navigation{
+        position: absolute;
+        display: none;
+    }
+    .header ul li{
+        display: block;
+        margin: 20px auto;
+    }
+    .hiring button{
+        position: absolute;
+        top: 0px;
+        left: 40%;
+    }
+    
+}
+
+@media screen and (min-width:800px) {
+    .nav-links{
+        position: absolute;
+        top: 10px;
+        left:30%;
+    }
+    
+    .nav-waitlist{
+        position: absolute;
+        right: 0px;
+        top: 5px;
+    }
+
+    .hiring{
+        position: absolute;
+        margin-top: 10px;
+    }
+
+}

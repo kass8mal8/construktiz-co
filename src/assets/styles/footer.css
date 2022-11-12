@@ -1,0 +1,38 @@
+.footer{
+    margin-top: 152vh;
+}
+
+.footer p,.footer h4{
+    color: black;
+}
+
+.footer ul li{
+    display: inline-flex;
+    margin-right: 30px;
+}
+
+.help{
+    display: grid;
+    grid-template-columns: 15% 70%;
+    margin-top: 50px;
+}
+
+.help img{
+    margin-right: 10px;
+    width: 40px;
+}
+
+@media screen and (min-width:800px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top:45%;
+    }
+    .help{
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
