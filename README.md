@@ -6,5 +6,5 @@ A landing page about a web hosting company.No library was used in the developmen
 
 ### Fonts Used
 
-https://fonts.google.com/specimen/Lato
-https://fonts.google.com/specimen/Playfair+Display
+- https://fonts.google.com/specimen/Lato
+- https://fonts.google.com/specimen/Playfair+Display
