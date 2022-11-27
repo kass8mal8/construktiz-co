@@ -1,5 +1,5 @@
 .footer{
-    margin-top: 152vh;
+    margin-top: 135vh;
 }
 
 .footer p,.footer h4{
@@ -14,7 +14,7 @@
 .help{
     display: grid;
     grid-template-columns: 15% 70%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .help img{

@@ -60,7 +60,7 @@ button{
         background: rgba(0,0, 0, 0.7);
         width: 112%;
         left: -15px;
-        height: 190vh;
+        height: 160vh;
         z-index: 4;
         display: none;
         transition: 0.4s ease;
