@@ -1,0 +1,110 @@
+@import "./variables";
+@font-face{
+    font-family:fair;
+    src:url(../font/PlayfairDisplay-Regular.ttf);
+}
+
+
+.header{
+
+    .header-intro{
+
+        img{
+            margin-top: 15px;
+        }
+        .logo-text{
+            position: absolute;
+            margin-top: -35px;
+            list-style: none;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 60px;
+            font-family: fair;
+            cursor: pointer;
+        }
+    }
+
+    .header-text{
+        .text{
+            position: absolute;
+            color: $white;
+            text-align: center;
+            margin-top: 20px;
+
+            button{
+                width: 60%;
+            }
+
+            p{
+                display: none;
+                font-size: 1.5pc;
+            }
+            
+
+            .h3{
+                font-size: 20px;
+                display: block;
+            }
+
+            aside{
+                padding: 10px;
+                padding-inline: 40px;
+                border: 1px solid $orange;
+                width: 100px;
+                display: inline;
+                margin-left: 20px;
+
+                &:hover{
+                    cursor: pointer;
+                    background: $orange;
+                }
+
+                @include responsive(mobile){
+                    display: none;
+
+                    
+                }
+            }
+
+            @include responsive(tablet){
+                width: 60%;
+                text-align: start;
+
+                .h3{
+                    font-size: 4rem;
+                }
+                p{
+                    display: block;
+                }
+                button{
+                    width: 22%;
+                }
+            }
+        }
+    }
+
+    .overlay{
+        background: $black;
+        width: 100%;
+        height: 45%;
+        left: 0px;
+        position: absolute;
+        top: 70px;
+    
+        @include responsive(tablet){
+            height: 87%;
+        }
+    
+        img{
+            width: 100%;
+            height: 102%;
+            z-index: -2;
+            position: absolute;
+    
+            @include responsive(tablet){
+               height: 100%;
+            }
+        }
+        
+    }
+}

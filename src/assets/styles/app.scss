@@ -1,0 +1,57 @@
+@import './variables';
+
+@font-face {
+    font-family: kumbh-sans;
+    src: url(../font/KumbhSans-Medium.ttf);
+}
+
+.container{
+    font-family: kumbh-sans;
+    width: 90%;
+    margin-left: 16px;
+
+    @include responsive(tablet){
+        width: 80%;
+        margin-left: 150px;
+    }
+
+    ul{
+        display: inline-flex;
+        list-style-type: none;
+        margin-top: -35px;
+        float: right;
+        font-weight: bold;
+       
+
+        li{
+            text-transform: uppercase;
+            margin-left: 40px;
+
+            @include responsive(tablet){
+                &:hover{
+                    cursor: pointer;
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    button{
+        background: $orange;
+        border: 1px solid $orange;
+        padding: 10px;
+        color: $white;
+        margin-top: 20px;
+        font-family: kumbh-sans;
+        letter-spacing: 2px;
+
+        @include responsive(tablet){
+            &:hover{
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+
+        
+    }
+}

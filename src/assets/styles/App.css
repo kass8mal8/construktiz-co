@@ -1,35 +1,47 @@
-*{
-  margin: 0px;
-  padding: 0px;
-}
-
 @font-face {
-  font-family: lato;
-  src: url(../font/Lato-Regular.ttf);
+  font-family: kumbh-sans;
+  src: url(../font/KumbhSans-Medium.ttf);
 }
-
 .container {
+  font-family: kumbh-sans;
   width: 90%;
-  margin-left: 15px;
-  font-family: lato;
-  position: relative;
-  color: rgb(129, 126, 126);
+  margin-left: 16px;
 }
-
-button{
-  font-family: lato;
-  color: white;
-  cursor: pointer;
-}
-
-li:hover{
-  cursor: pointer;
-  color: rgb(58, 143, 117);
-}
-
-@media screen and (min-width:800px) {
-  .container{
-    width: 85%;
-    margin-left:90px;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin-left: 150px;
   }
 }
+.container ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin-top: -35px;
+  float: right;
+  font-weight: bold;
+}
+.container ul li {
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .container ul li:hover {
+    cursor: pointer;
+    color: rgb(247, 176, 23);
+  }
+}
+.container button {
+  background: rgb(247, 176, 23);
+  border: 1px solid rgb(247, 176, 23);
+  padding: 10px;
+  color: whitesmoke;
+  margin-top: 20px;
+  font-family: kumbh-sans;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .container button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}/*# sourceMappingURL=app.css.map */

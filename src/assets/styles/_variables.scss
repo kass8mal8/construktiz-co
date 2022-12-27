@@ -1,0 +1,14 @@
+@mixin responsive($breakpoint){
+    @if($breakpoint == 'tablet'){
+        @media screen and (min-width:768px) { @content }
+    };
+
+    @if($breakpoint == 'mobile'){
+        @media screen and(max-width:500px) { @content }
+    };
+}
+
+$white:whitesmoke;
+$orange:rgb(247, 176, 23);
+$gray:rgb(163, 163, 163);
+$black:rgba(0,0,0,0.5);

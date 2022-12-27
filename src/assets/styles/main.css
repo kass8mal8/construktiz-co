@@ -1,109 +1,62 @@
-@font-face {
-    font-family: playfair;
-    src: url(../font/PlayfairDisplay-Bold.ttf);
+.main-container {
+  margin-top: 70%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.main-container .design {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main-container .design img {
+  width: 100%;
+}
+.main-container .design aside {
+  padding: 20px;
+  background: whitesmoke;
+}
+@media screen and (min-width: 768px) {
+  .main-container .design:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0px rgb(163, 163, 163);
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 40px;
+    margin-top: 50%;
+    width: 92%;
+  }
 }
 
-.hero{
-    z-index: 3;
+form {
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  width: 97%;
+  margin-bottom: 30px;
+  background: whitesmoke;
 }
-
-.main{
-    top: 450px;
-    position: absolute;
+form input {
+  width: 70%;
+  padding: 10px;
+  margin: auto 30px;
+  outline: none;
+  font-family: kumbh-sans;
 }
-
-h1{
-    margin-bottom: 20px;
-    font-family: playfair;
-    font-size: 40px;
-    color: black;
-}
-
-.hero-and-shapes{
-    width: 100%;
-    position: relative;
-}
-
-.hero-and-shapes img{
-    width: 70%;
-    position: absolute;
-    margin-left: 70px;
-    top: -340px;
-}
-
-.blue{
-    transform: rotate(-40deg);
-    z-index: 0;
-}
-
-.pink{
-    transform: rotate(-30deg);
-    z-index: 1;
-}
-
-.purple{
-    transform: rotate(-20deg);
-    z-index: 2;
-}
-
-form{
-    margin-top: 20px;
-}
-
-form aside{
-    margin: 20px auto;
-    position: relative;
-}
-
-form input{
-    border: 1px solid white;
-    outline: none;
-    padding: 15px;
+@media screen and (max-width: 500px) {
+  form input {
     width: 90%;
-    font-family: lato;
-    background: whitesmoke;
-    margin: 10px auto;
-    border-radius: 3px;
+    margin: auto;
+  }
 }
-
-form button{
-   width: 100%;
-   padding: 15px;
+form button {
+  width: 97%;
 }
-
-form input:focus{
-    border: 1px solid rgb(59, 107, 212);
-}
-
-.check{
-    width: 22px;
-    margin-right: 30px;
-    position: absolute;
-    top:0px;
-}
-
-form aside p{
-    margin-left: 50px;
-}
-
-@media screen and (min-width:800px) {
-    .main{
-        display: flex;
-        flex-flow: row-reverse;
-        justify-content: space-between;
-        top: auto;
-        margin-top: 80px;
-    }
-    .hero-and-shapes img{
-        width: 70%;
-        top: auto;
-        margin-left: 50%;
-    }
-    form input{
-        width: 60%;
-        margin-right: 10px;
-    }
-    form button{
-        width: 30%;
-    }
-}
+@media screen and (min-width: 768px) {
+  form button {
+    width: 20%;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,71 @@
+@import "./variables";
+
+.main-container{
+    margin-top: 70%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    .design{
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+
+        aside{
+            padding: 20px;
+            background: $white;
+        }
+        margin-bottom: 20px;
+
+        @include responsive(tablet){
+            &:hover{
+                transform: scale(1.03);
+                cursor: pointer;
+                box-shadow: 0 3px 3px 0px $gray;
+                
+            }
+        }
+    }
+
+    
+    @include responsive(tablet){
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 40px;
+        margin-top: 50%;
+        
+        width: 92%;
+
+    }
+
+}
+
+form{
+    padding: 10px;
+    border: 1px solid $white;
+    width: 97%;
+    margin-bottom: 30px;
+    background: $white;
+
+    input{
+        width: 70%;
+        padding: 10px;
+        margin:auto 30px;
+        outline: none;
+        font-family: kumbh-sans;
+
+        @include responsive(mobile){
+            width: 90%;
+            margin: auto;
+        }
+    }
+
+    button{
+        width: 97%;
+
+        @include responsive(tablet){
+            width: 20%;
+        }
+    }
+}

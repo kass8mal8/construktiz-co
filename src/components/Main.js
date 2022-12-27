@@ -1,41 +1,36 @@
-import '../assets/styles/main.css'
-import model from '../assets/images/Hero Image (Model).png'
-import blue from '../assets/images/Blue Shape.svg'
-import purple from '../assets/images/Purple Shape.svg'
-import pink from '../assets/images/Pink Shape.svg'
-import check from '../assets/images/Checkmark.svg'
+import design from "../assets/images/design.jpg"
+import plan from "../assets/images/planned.webp"
+import execute from "../assets/images/execute.webp"
+
+import "../assets/styles/main.css"
+
 
 const Main = () => {
 
+    const contents = [
+        {src:design,alt:'Designing',h3:'Perfectly Design',txt:'At [Company Name], we offer comprehensive design services to bring your construction project to life.'},
+        {src:plan,alt:'Planning',h3:'Carefully Planned',txt:'At [Company Name], we understand that careful planning is essential to the success of any construction project.'},
+        {src:execute,alt:'Execuing',h3:'Smartly Execute',txt:'At [Company Name], we pride ourselves on delivering top-quality construction services to our clients.'}
+    ]
+
     return ( 
-        <div className='main'>
-            <div className='hero-and-shapes'>
-                <img src={purple} alt="purple" className='purple'/>
-                <img src={pink} alt="pink" className='pink'/>
-                <img src={blue} alt="blue" className='blue' />
-                <img src={model} alt="model" className='hero'/>
+        <div>
+            <div className="main-container">
+                {contents.map( (cont, index) => (
+                    <div className="design" key={index}>
+                        <img src={cont.src} alt={cont.alt} />
+                        <aside>
+                            <h3>{cont.h3}</h3>
+                            <p>{cont.txt}</p>
+                        </aside>
+                    </div>
+                ))}
             </div>
-            <div>
-                <h1>Host your website in less than 5 minutes</h1>
-                <p>
-                    With Hosterr, get your website up and running in no less than 5 minutes
-                    with the most competitive pricing packages available online.
-                </p>
-                <form>
-                    <input 
-                        type="email" 
-                        placeholder='Enter e-mail address'
-                        required/>
-                    <button>Join Waitlist</button>
-                    <aside>
-                        <img 
-                            src={check} 
-                            alt="checkmark" 
-                            className='check'/>
-                        <p>  No spam, ever, Unsubscribe anytime.</p>
-                    </aside>
-                </form>
-            </div>
+
+            <form>
+                <input type="text" placeholder="message" />
+                <button>leave message</button>
+            </form>
         </div>
      );
 }

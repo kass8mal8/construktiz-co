@@ -1,105 +1,90 @@
-.header{
-    margin-top: 30px;
+@font-face {
+  font-family: fair;
+  src: url(../font/PlayfairDisplay-Regular.ttf);
 }
-
-.header ul li{
-    display: inline-flex;
-    margin: auto 15px;
+.header .header-intro img {
+  margin-top: 15px;
 }
-
-button{
-    background-color: rgb(59, 107, 212);
-    border: 1px solid rgb(59, 107, 212);
-    border-radius: 3px;
-    padding: 10px;
-    color: white;
+.header .header-intro .logo-text {
+  position: absolute;
+  margin-top: -35px;
+  list-style: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 60px;
+  font-family: fair;
+  cursor: pointer;
 }
-
-.hiring button{
-    background: linear-gradient(to right,rgb(226, 164, 48),rgb(216, 59, 85));
-    border: 1px solid rgb(240, 124, 143);
-    border-radius: 20px;
-    padding-inline: 10px;
-    padding-block: 7px;
+.header .header-text .text {
+  position: absolute;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 20px;
 }
-
-.menu{
-    position: absolute;
-    top: 13px;
-    right: 0px;
+.header .header-text .text button {
+  width: 60%;
 }
-
-@media screen and (max-width:500px) {
-    .navigation{
-        position: absolute;
-        display: none;
-        z-index: 10;
-        background: white;
-        border-radius: 10px;
-        font-weight: 500;
-        text-align: center;
-        width: 80%;
-        left: 20px;
-        padding: 15px;
-        top: 100px;
-        transition: 0.4s ease;
-    }
-    .navigation.active{
-        display: block;
-        transition: 0.4s ease;
-        font-size: 20px;
-    }
-    .navigation button{
-        width: 100%;
-        font-weight: 600;
-        letter-spacing: 2px;
-    }
-    .overlay{
-        position: absolute;
-        top: -30px;
-        background: rgba(0,0, 0, 0.7);
-        width: 112%;
-        left: -15px;
-        height: 137vh;
-        z-index: 4;
-        display: none;
-        transition: 0.4s ease;
-    }
-    .overlay.active{
-        display: block;
-        transition: 0.4s ease;
-    }
-    .header ul li{
-        display: block;
-        margin: 20px auto;
-    }
-    .hiring button{
-        position: absolute;
-        top: 0px;
-        left: 40%;
-    }
-    
+.header .header-text .text p {
+  display: none;
+  font-size: 1.5pc;
 }
-
-@media screen and (min-width:800px) {
-    .nav-links{
-        position: absolute;
-        top: 10px;
-        left:30%;
-    }
-    
-    .nav-waitlist{
-        position: absolute;
-        right: 0px;
-        top: 5px;
-    }
-
-    .hiring{
-        position: absolute;
-        margin-top: 10px;
-    }
-    .menu{
-        display: none;
-    }
-
+.header .header-text .text .h3 {
+  font-size: 20px;
+  display: block;
 }
+.header .header-text .text aside {
+  padding: 10px;
+  padding-inline: 40px;
+  border: 1px solid rgb(247, 176, 23);
+  width: 100px;
+  display: inline;
+  margin-left: 20px;
+}
+.header .header-text .text aside:hover {
+  cursor: pointer;
+  background: rgb(247, 176, 23);
+}
+@media screen and (max-width: 500px) {
+  .header .header-text .text aside {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .header-text .text {
+    width: 60%;
+    text-align: start;
+  }
+  .header .header-text .text .h3 {
+    font-size: 4rem;
+  }
+  .header .header-text .text p {
+    display: block;
+  }
+  .header .header-text .text button {
+    width: 22%;
+  }
+}
+.header .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 45%;
+  left: 0px;
+  position: absolute;
+  top: 70px;
+}
+@media screen and (min-width: 768px) {
+  .header .overlay {
+    height: 87%;
+  }
+}
+.header .overlay img {
+  width: 100%;
+  height: 102%;
+  z-index: -2;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .header .overlay img {
+    height: 100%;
+  }
+}/*# sourceMappingURL=header.css.map */
