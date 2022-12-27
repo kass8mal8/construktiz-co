@@ -1,7 +1,0 @@
-@import './variables';
-
-.navbar{
-    @include responsive(mobile){
-        display: none;
-    }
-}

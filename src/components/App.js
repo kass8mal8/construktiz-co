@@ -1,13 +1,15 @@
 import Header from './Header';
 import Footer from './Footer'
-import "../assets/styles/app.css"
+import "../styles/index.css"
 import Main from './Main';
+import About from "./About"
 
 function App() {
   return (
     <div className="container">
       <Header />
       <Main />
+      <About />
       <Footer />
     </div>
   );

@@ -5,11 +5,29 @@
     width: 100%;
     position: relative;
     z-index: 2;
+
+    @include responsive(tablet){
+        margin-top: 50%;
+        width: 97%;
+        margin-left: 10px;
+
+    }
     .design{
         width: 100%;
+        .more{
+            padding: 10px;
+            border: 1px solid $orange;
+            cursor: pointer;
+            text-align: center;
 
-        img{
-            width: 100%;
+            @include responsive(mobile){
+                background: $orange;
+            }
+
+            &:hover{
+                background: $orange;
+                color: $white;
+            }
         }
 
         aside{
@@ -19,25 +37,16 @@
         margin-bottom: 20px;
 
         @include responsive(tablet){
+            width: 90%;
             &:hover{
                 transform: scale(1.03);
-                cursor: pointer;
                 box-shadow: 0 3px 3px 0px $gray;
                 
             }
+        
         }
     }
 
-    
-    @include responsive(tablet){
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        gap: 40px;
-        margin-top: 50%;
-        
-        width: 92%;
-
-    }
 
 }
 
@@ -47,6 +56,10 @@ form{
     width: 97%;
     margin-bottom: 30px;
     background: $white;
+
+    @include responsive(mobile){
+        width: 93%;
+    }
 
     input{
         width: 70%;
@@ -63,6 +76,8 @@ form{
 
     button{
         width: 97%;
+        background: $orange;
+        border: 1px solid $orange;
 
         @include responsive(tablet){
             width: 20%;

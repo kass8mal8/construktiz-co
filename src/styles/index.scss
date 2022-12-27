@@ -8,7 +8,7 @@
 .container{
     font-family: kumbh-sans;
     width: 90%;
-    margin-left: 16px;
+    margin-left: 20px;
 
     @include responsive(tablet){
         width: 80%;
@@ -16,29 +16,33 @@
     }
 
     ul{
-        display: inline-flex;
         list-style-type: none;
-        margin-top: -35px;
-        float: right;
         font-weight: bold;
-       
+        text-transform: uppercase;
 
-        li{
-            text-transform: uppercase;
-            margin-left: 40px;
+        @include responsive(tablet){
+            display: inline-flex;
+            margin-top: -35px;
+            float: right;
 
-            @include responsive(tablet){
+            li{
+                margin-left: 40px;
+                
                 &:hover{
                     cursor: pointer;
                     color: $orange;
                 }
+
+                &:nth-of-type(5){
+                    display: none;
+                }
             }
         }
+       
+        
     }
 
     button{
-        background: $orange;
-        border: 1px solid $orange;
         padding: 10px;
         color: $white;
         margin-top: 20px;

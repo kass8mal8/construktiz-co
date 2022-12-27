@@ -1,0 +1,53 @@
+@import './variables';
+
+.link{
+    width: 70%;
+    border: 3px solid $orange;
+    position: absolute;
+    z-index: -2;
+    margin-top: 100px;
+
+    @include responsive(mobile){
+        transform: rotate(90deg);
+        margin-left: 30px;
+        margin-top: 150px;
+    }
+}
+
+.about{
+    margin-bottom: 30px;
+    @include responsive(tablet){
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 15px;
+    }
+
+    div{
+        border: 1px solid $white;
+        background: $white;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @include responsive(tablet){
+            width: 92%;
+
+            &:hover{
+                transform: scale(1.03);
+                box-shadow: 0 3px 3px 0px $gray;
+                
+            }
+        }
+        
+    }
+
+    .qualities{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        
+        img{
+            width: 40%;
+        }
+    }
+}

@@ -1,14 +1,35 @@
-import '../assets/styles/navbar.css'
+import '../styles/navbar.css'
 
-const NavBar = () => {
+const NavBar = ({toggleNavigation}) => {
     return ( 
         <div className="navbar">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact us</li>
-            </ul>
+
+            <div className="tab-nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                    <li>
+                        <button>view projects</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="nav-overlay" onClick={toggleNavigation}>
+                <div className="navbar">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact us</li>
+                        <li>
+                            <button>view projects</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
      );
 }

@@ -1,0 +1,56 @@
+@media screen and (max-width: 500px) {
+  .tab-nav {
+    display: none;
+  }
+}
+.nav-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0px;
+  top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .nav-overlay {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-overlay .navbar {
+    z-index: 5;
+    position: absolute;
+    border: 1px solid whitesmoke;
+    background: whitesmoke;
+    margin-top: 160px;
+    width: 70%;
+    margin-left: 60px;
+  }
+  .nav-overlay .navbar ul {
+    display: block;
+    text-align: center;
+    margin-left: -40px;
+  }
+  .nav-overlay .navbar ul li {
+    margin: 10px 0px;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    padding-block: 10px;
+  }
+  .nav-overlay .navbar ul li:nth-of-type(5) {
+    border-bottom: none;
+    padding: 0px;
+  }
+  .nav-overlay .navbar ul button {
+    background: rgb(247, 176, 23);
+    border: 1px solid rgb(247, 176, 23);
+    text-transform: capitalize;
+    width: 90%;
+    margin-top: 10px;
+  }
+}
+
+.nav-overlay.active {
+  display: block;
+}/*# sourceMappingURL=navbar.css.map */

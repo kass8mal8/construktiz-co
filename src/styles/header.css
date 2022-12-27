@@ -2,6 +2,17 @@
   font-family: fair;
   src: url(../font/PlayfairDisplay-Regular.ttf);
 }
+.header .header-intro .menu {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .header .header-intro .menu {
+    display: block;
+    position: absolute;
+    top: 37px;
+    right: 30px;
+  }
+}
 .header .header-intro img {
   margin-top: 15px;
 }
@@ -20,16 +31,19 @@
   color: whitesmoke;
   text-align: center;
   margin-top: 20px;
+  margin-left: -20px;
 }
 .header .header-text .text button {
   width: 60%;
+  background: rgb(247, 176, 23);
+  border: 1px solid rgb(247, 176, 23);
 }
 .header .header-text .text p {
   display: none;
   font-size: 1.5pc;
 }
 .header .header-text .text .h3 {
-  font-size: 20px;
+  font-size: 19px;
   display: block;
 }
 .header .header-text .text aside {
@@ -53,6 +67,7 @@
   .header .header-text .text {
     width: 60%;
     text-align: start;
+    margin-left: auto;
   }
   .header .header-text .text .h3 {
     font-size: 4rem;
@@ -65,7 +80,7 @@
   }
 }
 .header .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 45%;
   left: 0px;

@@ -1,9 +1,16 @@
-import "../assets/styles/header.css"
-import bg_image from "../assets/images/head-bg.jpg"
-import logo from "../assets/images/logo.png"
+import "../styles/header.css"
+import bg_image from "../images/head-bg.jpg"
+import logo from "../images/logo.png"
 import NavBar from "./NavBar";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 const Header = () => {
+
+    const toggleNavigation = () => {
+        document.querySelector('.nav-overlay').classList.toggle('active')
+    }
 
     return (  
         <div className="header">
@@ -11,12 +18,16 @@ const Header = () => {
             <div className="header-intro">
                 <img src={logo} alt="logo" width="40" />
                 <li className="logo-text">BuildIX</li>
-                <NavBar />
+                <FontAwesomeIcon 
+                    icon={faBars} 
+                    className="menu"
+                    onClick={toggleNavigation}/>
+                <NavBar toggleNavigation = {toggleNavigation}/>
             </div>
 
             <div className="header-text">
                 <div className="overlay">
-                    <img src={bg_image} alt="bg-image" />
+                    <img src={bg_image} alt="bg" />
                 </div>
                 <div className="text">
                     <p className="h3">We have a passion in creating new and unique spaces.</p>

@@ -1,4 +1,5 @@
 @import "./variables";
+
 @font-face{
     font-family:fair;
     src:url(../font/PlayfairDisplay-Regular.ttf);
@@ -9,9 +10,21 @@
 
     .header-intro{
 
+        .menu{
+            display: none;
+
+            @include responsive(mobile){
+                display: block;
+                position: absolute;
+                top: 37px;
+                right: 30px;
+            }
+        }
+
         img{
             margin-top: 15px;
         }
+        
         .logo-text{
             position: absolute;
             margin-top: -35px;
@@ -30,9 +43,12 @@
             color: $white;
             text-align: center;
             margin-top: 20px;
+            margin-left: -20px;
 
             button{
                 width: 60%;
+                background: $orange;
+                border: 1px solid $orange;
             }
 
             p{
@@ -42,7 +58,7 @@
             
 
             .h3{
-                font-size: 20px;
+                font-size: 19px;
                 display: block;
             }
 
@@ -69,13 +85,16 @@
             @include responsive(tablet){
                 width: 60%;
                 text-align: start;
+                margin-left: auto;
 
                 .h3{
                     font-size: 4rem;
                 }
+
                 p{
                     display: block;
                 }
+
                 button{
                     width: 22%;
                 }

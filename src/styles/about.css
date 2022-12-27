@@ -1,0 +1,49 @@
+.link {
+  width: 70%;
+  border: 3px solid rgb(247, 176, 23);
+  position: absolute;
+  z-index: -2;
+  margin-top: 100px;
+}
+@media screen and (max-width: 500px) {
+  .link {
+    transform: rotate(90deg);
+    margin-left: 30px;
+    margin-top: 150px;
+  }
+}
+
+.about {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+  }
+}
+.about div {
+  border: 1px solid whitesmoke;
+  background: whitesmoke;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about div {
+    width: 92%;
+  }
+  .about div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 3px 3px 0px rgb(163, 163, 163);
+  }
+}
+.about .qualities {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.about .qualities img {
+  width: 40%;
+}/*# sourceMappingURL=about.css.map */

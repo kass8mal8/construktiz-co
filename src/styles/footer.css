@@ -1,0 +1,40 @@
+.footer {
+  background: rgb(223, 200, 149);
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  padding-block: 40px;
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    text-align: center;
+  }
+  .footer ul {
+    display: inline-flex;
+    margin-left: -30px;
+  }
+  .footer ul li {
+    margin: auto 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+  }
+  .footer .social-media {
+    margin-top: 40px;
+  }
+  .footer .social-media ul {
+    position: absolute;
+    margin-left: -70px;
+    margin-bottom: 20px;
+  }
+  .footer .logo-ft {
+    margin-left: 23%;
+  }
+  .footer .logo-ft img {
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=footer.css.map */
