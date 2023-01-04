@@ -1,6 +1,6 @@
 .link {
   width: 70%;
-  border: 3px solid rgb(247, 176, 23);
+  border-bottom: 5px solid rgb(247, 176, 23);
   position: absolute;
   z-index: -2;
   margin-top: 100px;
